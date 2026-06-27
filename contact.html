@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phurba Geljen Sherpa | Contact Me</title>
+    <!-- SEO Tags -->
+    <meta name="description" content="Get in touch with Phurba Geljen Sherpa for film production projects or high-altitude guiding in Nepal. Reach out via email, phone, or WhatsApp.">
+    <!-- FontAwesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Page Transition Overlay -->
+    <div class="transition-overlay active"></div>
+
+    <!-- Persistent Header -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"></div>
+                PHURBA SHERPA
+            </a>
+            
+            <button class="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu">
+                <ul style="display: flex; flex-direction: inherit; gap: inherit; align-items: center; list-style: none;">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Meet Phurba</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <span class="nav-link dropdown-toggle">Work <span class="dropdown-icon"></span></span>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="filmmaking.html">Filmmaking</a></li>
+                            <li class="dropdown-item"><a href="trekking.html">Trekking & Climbing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="books.html" class="nav-link">Book Recs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero section -->
+        <section class="hero-page">
+            <div class="section-container">
+                <span class="section-tag">Let's Connect</span>
+                <h1 class="hero-page-title">Get In Touch</h1>
+                <p class="hero-page-desc">
+                    Have a project in mind, want to trek in the Himalayas, or just want to chat? Drop me a line below and let's make it happen.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section Content -->
+        <section style="padding-top: 0;">
+            <div class="section-container">
+                <div class="contact-grid">
+                    
+                    <!-- Sidebar Details -->
+                    <div class="contact-sidebar">
+                        
+                        <div>
+                            <span class="section-tag" style="margin-bottom: 1.5rem;">Contact Details</span>
+                            
+                            <div style="display: flex; flex-direction: column; gap: 2rem;">
+                                <!-- Location -->
+                                <div class="contact-card">
+                                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="contact-details">
+                                        <h4>Location</h4>
+                                        <p>Kathmandu, Nepal</p>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="contact-card">
+                                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div class="contact-details">
+                                        <h4>Email</h4>
+                                        <p><a href="mailto:phurba.work@gmail.com">phurba.work@gmail.com</a></p>
+                                    </div>
+                                </div>
+
+                                <!-- Phone / WhatsApp -->
+                                <div class="contact-card">
+                                    <div class="contact-icon" style="background:rgba(37,211,102,0.08); color:#25D366;"><i class="fa-brands fa-whatsapp"></i></div>
+                                    <div class="contact-details">
+                                        <h4>Phone & WhatsApp</h4>
+                                        <p><a href="https://wa.me/9779803716195" target="_blank">+977 9803716195</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Networks -->
+                        <div class="social-connect">
+                            <h4>Social Connect</h4>
+                            <div class="social-grid">
+                                <a href="https://www.instagram.com/phurbageljensherpa?igsh=aWVucWk2djh6ODRm" target="_blank" class="social-btn instagram">
+                                    <i class="fa-brands fa-instagram"></i> Instagram
+                                </a>
+                                <a href="https://www.youtube.com/@Phurbageljensherpa" target="_blank" class="social-btn youtube">
+                                    <i class="fa-brands fa-youtube"></i> YouTube
+                                </a>
+                                <a href="https://www.facebook.com/share/17wW57uCf9/" target="_blank" class="social-btn facebook">
+                                    <i class="fa-brands fa-facebook"></i> Facebook
+                                </a>
+                                <a href="https://tiktok.com/@phurbasherpa678" target="_blank" class="social-btn tiktok">
+                                    <i class="fa-brands fa-tiktok"></i> TikTok
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Form Wrapper -->
+                    <div class="contact-form-wrapper">
+                        <span class="section-tag" style="margin-bottom: 1.5rem;">Send Message</span>
+                        <h3 style="margin-bottom: 2rem; font-size: 1.6rem;">Direct Inquiry</h3>
+                        
+                        <form id="contactForm" autocomplete="off">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-input" placeholder=" " required>
+                                <label for="name" class="form-label">Full Name *</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-input" placeholder=" " required>
+                                <label for="email" class="form-label">Email Address *</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="subject" class="form-input" placeholder=" ">
+                                <label for="subject" class="form-label">Subject</label>
+                            </div>
+
+                            <div class="form-group" style="margin-bottom: 2.5rem;">
+                                <textarea id="message" class="form-input" placeholder=" " required></textarea>
+                                <label for="message" class="form-label">Message *</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; border:none;">
+                                Send to WhatsApp <i class="fa-brands fa-whatsapp" style="margin-left: 5px;"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Persistent Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">PHURBA GELJEN SHERPA</div>
+            <div class="footer-copyright">&copy; 2026 Phurba Sherpa. All Rights Reserved.</div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/phurbageljensherpa?igsh=aWVucWk2djh6ODRm" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Phurbageljensherpa" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/share/17wW57uCf9/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://tiktok.com/@phurbasherpa678" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
