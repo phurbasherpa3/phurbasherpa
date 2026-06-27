@@ -42,7 +42,12 @@ function initNavigation() {
     }
 
     // Handle Active Menu Links based on current URL path
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    // Get the filename from the pathname, handling GitHub Pages URLs correctly
+    let currentPath = window.location.pathname.split('/').pop();
+    // If pathname ends with / or is empty, we're at index.html
+    if (!currentPath || currentPath === '') {
+        currentPath = 'index.html';
+    }
     const navLinks = document.querySelectorAll('.nav-link');
     
     navLinks.forEach(link => {

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Phurba Geljen Sherpa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // GitHub Pages redirect script for single-page apps
+        // This helps handle routing issues on project sites
+        if (window.location.pathname !== '/') {
+            const segments = window.location.pathname.split('/').filter(p => p);
+            if (segments.length > 0 && !segments[segments.length - 1].includes('.')) {
+                // Redirect directory-like paths to index with hash
+                let redirectPath = '/#/' + segments.join('/');
+                window.location.replace(redirectPath);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="transition-overlay active"></div>
+    
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"></div>
+                PHURBA SHERPA
+            </a>
+            <nav class="nav-menu">
+                <ul style="display: flex; flex-direction: inherit; gap: inherit; align-items: center; list-style: none;">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Meet Phurba</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 2rem;">
+        <section class="section-container" style="max-width: 600px;">
+            <h1 style="font-size: 5rem; margin-bottom: 1rem; background: linear-gradient(135deg, #FFF 40%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">404</h1>
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Page Not Found</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; color: #9CA3AF;">
+                The page you're looking for doesn't exist. Let's get you back on track.
+            </p>
+            <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

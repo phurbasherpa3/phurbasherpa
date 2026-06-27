@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.code-workspace
+
+# Node modules (if using any build tools)
+node_modules/
+package-lock.json
+
+# Build artifacts
+dist/
+build/
+
+# Editor backups
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.local
